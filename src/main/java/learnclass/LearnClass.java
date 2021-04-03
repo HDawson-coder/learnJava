@@ -1,9 +1,9 @@
 package learnclass;
 
-class forLoops {
+class LearnClass {
 
   public static void main(String[] args) {
-    forLoops.fizzBuzzProcessor(100);
+    LearnClass.fizzBuzzProcessor(100);
   }
 
   public static void fizzBuzzProcessor(int n) {

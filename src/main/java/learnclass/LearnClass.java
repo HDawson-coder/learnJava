@@ -3,18 +3,20 @@ package learnclass;
 class forLoops {
 
   public static void main(String[] args) {
+    forLoops.fizzBuzzProcessor(100);
+  }
 
-    for(int i = 0; i < 4; i++) {
-      System.out.println("I love cats!");
-    }
-    for(int i = 0; i < 15; i++) {
-      System.out.println(i);
-    }
-
-    int[] grades = {98, 100, 83, 90, 93};
-
-    for(int i = 0; i < grades.length; i++) {
-      System.out.println(grades[i]);
+  public static void fizzBuzzProcessor(int n) {
+    for (int i = 1; i <= n; i++) {
+      if (i % 3 == 0 && i % 5 == 0) {
+        System.out.println("FizzBuzz");
+      } else if (i % 3 == 0) {
+        System.out.println("Fizz");
+      } else if (i % 5 == 0) {
+        System.out.println("Buzz");
+      } else {
+        System.out.println(i);
+      }
     }
   }
 }

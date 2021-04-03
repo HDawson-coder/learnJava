@@ -1,14 +1,19 @@
-learnclass/LearnClass.java
- learnclass.forLoops
+learnclass/SliceOfArray.java
+ learnclass.SliceOfArray
 learnclass/Test.java
  learnclass.Test
 learnclass/BreakDance.java
  learnclass.BreakDance
 CodingBat6.java
  CodingBat6
-learnclass/ComparisonOperators.java
- learnclass.ComparisonOperators
 WorkWeek.java
  WorkWeek
  WorkWeek$1
  WorkWeek$Day
+learninterface/LearnInterface.java
+ learninterface.LearnInterface
+learnclass/ComparisonOperators.java
+ learnclass.ComparisonOperators
+ learnclass.ComparisonOperators$1
+learnclass/LearnClass.java
+ learnclass.forLoops

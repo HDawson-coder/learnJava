@@ -1,35 +1,53 @@
 package learnclass;
 
-public class Vehicle {
+class Vehicle {
 
   int passengers; // number of passengers
   int fuelCap; // fuel capacity in gallons
   int mpg; // fuel consumption in miles per gallon
 
-    void range() {
-      System.out.println(" Range is " + fuelCap * mpg);
-    }
-}
+  //Constructor for Vehicle
+  Vehicle(int p, int f, int m) {
+    passengers = p;
+    fuelCap = f;
+    mpg = m;
+  }
 
-  //This class declares an object of type Vehicle.
-class VehicleDemo {
+  //return the range
+  int range() {
+    return mpg * fuelCap;
+  }
 
-  public static void main(String[] args) {
-    Vehicle minivan = new Vehicle();
-    int range;
-
-
-    // assign values to fields in minivan
-    minivan.passengers = 7;
-    minivan.fuelCap = 16;
-    minivan.mpg = 21;
-
-    // compute the range assuming a full tank of gas
-    range = minivan.fuelCap * minivan.mpg;
-    System.out.println("Minivan can carry "
-        + minivan.passengers
-        + " with a range of "
-        + range
-        + " miles per tank");
+  //compute fuel needed for a given distance.
+  double fuelNeeded(int miles) {
+    return (double) miles / mpg;
   }
 }
+
+  class VehicleConstructorDemo {
+
+    public static void main(String[] args) {
+      //construct complete vehicles
+      Vehicle minivan = new Vehicle(7, 16, 21);
+      Vehicle sportsCar = new Vehicle(2, 14, 12);
+      double gallons;
+      int distance = 252;
+
+      gallons = minivan.fuelNeeded(distance);
+
+      System.out.println("To go "
+          + distance
+          + " miles minivan needs "
+          + gallons
+          + " gallons of fuel.");
+
+      gallons = sportsCar.fuelNeeded(distance);
+
+      System.out.println("To go"
+          + distance
+          + " miles sportsCar needs "
+          + gallons
+          + " gallons of fuel.");
+    }
+  }
+
